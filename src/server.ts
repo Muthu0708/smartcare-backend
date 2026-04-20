@@ -4,7 +4,7 @@ import { sequelize } from './config/db.js';
 import { logger } from './config/logger.js';
 dotenv.config();
 
-const PORT=process.env.PORT || 5000;
+const PORT=process.env.PORT || 5002;
 
 const connectDB=async()=>{
     try{
