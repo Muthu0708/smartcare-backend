@@ -1,9 +1,6 @@
 {
   "development": {
-    "username": "root",
-    "password": "Kumar@12",
-    "database": "smartcare",
-    "host": "127.0.0.1",
+    "url": "mysql://root:wZdhIxTxYXzsCCeaJFitkHWJTHBxsweX@metro.proxy.rlwy.net:16167/railway",
     "dialect": "mysql"
   },
   "test": {
@@ -14,10 +11,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "url": "mysql://root:wZdhIxTxYXzsCCeaJFitkHWJTHBxsweX@metro.proxy.rlwy.net:16167/railway",
     "dialect": "mysql"
   }
 }
