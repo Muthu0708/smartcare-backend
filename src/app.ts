@@ -22,8 +22,25 @@ const uploadsPath = path.join(__dirname, "../uploads");
 const app=express();
 app.use(
   cors({
-    origin: process.env.FRONTEND_URL,
-    credentials: true, 
+    origin: function (origin, callback) {
+      const allowedOrigins = [
+        'http://localhost:5173',
+        'http://localhost:3000',
+        process.env.FRONTEND_URL || '',  // your main vercel URL
+      ];
+
+      // Allow all vercel preview deployments automatically
+      if (
+        !origin ||
+        allowedOrigins.includes(origin) ||
+        /\.vercel\.app$/.test(origin)
+      ) {
+        callback(null, true);
+      } else {
+        callback(new Error(`CORS blocked: ${origin}`));
+      }
+    },
+    credentials: true,
   })
 );
 
