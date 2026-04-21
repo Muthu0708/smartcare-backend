@@ -1,6 +1,6 @@
 {
   "development": {
-    "url": "mysql://root:wZdhIxTxYXzsCCeaJFitkHWJTHBxsweX@metro.proxy.rlwy.net:16167/railway",
+    "url": "mysql://root:wZdhIxTxYXzsCCeaJFitkHWJTHBxsweX@mysql.railway.internal:3306/railway",
     "dialect": "mysql"
   },
   "test": {
@@ -11,7 +11,7 @@
     "dialect": "mysql"
   },
   "production": {
-    "url": "mysql://root:wZdhIxTxYXzsCCeaJFitkHWJTHBxsweX@metro.proxy.rlwy.net:16167/railway",
+    "url": "mysql://root:wZdhIxTxYXzsCCeaJFitkHWJTHBxsweX@mysql.railway.internal:3306/railway",
     "dialect": "mysql"
   }
 }
